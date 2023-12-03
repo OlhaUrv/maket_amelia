@@ -52,27 +52,16 @@ html, body {
 }
 
 body {
-  font-family: 'Architects Daughter', cursive;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 164.063%;
+  line-height: 1.6;
   color: #161616;
   background: #D8D8D6;
-  max-width: 1440px; 
-  margin: 0 auto;
-}
-
-.wrapper {
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
   .container { 
   max-width: 1110px;
-  padding: 0 -165px 0;
   margin: 0 auto;
 }
 
@@ -80,6 +69,7 @@ body {
 
 .header {
   background: #81A36B;
+  padding: 25px 0 25px;
 }
 
 .header-container {
@@ -89,64 +79,57 @@ body {
 }
 
 .logo {
-  padding: 21px 0 9px;
+
 }
 
 .menu_list {
   display: flex;
   gap: 30px;
-  padding: 25px 0 25px;
 }
 
 .menu_list a {
   text-decoration: none;
   color: #161616;
-  text-align: center;
 }
 
 /* MAIN */
 
 .main_part {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 30px;
   background: #D8D8D6;
   margin-bottom: 120px;
 }
 
-.main_part_sect {
-  max-width: 900px;
-}
+/* .main_part_sect {
+  
+} */
 
 .title {
   font-family: Architects Daughter;
   font-size: 62px;
-  max-width: 434px;
-  max-height: 86px;
-  margin-top: 174px;
   margin-bottom: 41px;
 }
 
 .main_dsc {
   max-width: 540px;
-  max-height: 115px;
   font-family: Roboto;
   margin-bottom: 20px;
 }
 
 .btn_order {
-  max-width: 197px;
-  max-height: 60px;
   background: #81A36B;
   border-radius: 6px;
   padding: 18px 34px 21px;
   margin-right: 23px;
   cursor: pointer;
+  line-height: 18px;
+  border: 1px solid #81A36B;
 }
 
 .btn_help {
-  max-width: 164px;
-  max-height: 60px;
+  line-height: 18px;
   border-radius: 6px;
   border: 1px solid #81A36B;
   padding: 18px 34px 21px;
@@ -154,75 +137,71 @@ body {
 }
 
 .main-part_img {
-  object-fit: cover;
-  margin: 0;
+  height: 670px;
 }
 
 /* about section */
 
 .main_part_about {
   margin-bottom: 120px;
+  text-align: center;
+  width: 540px;
 }
 
 .sub_title {
   color: #000;
   font-family: Architects Daughter;
   font-size: 32px;
-  text-align: center;
   margin-bottom: 50px;
 }
 
-.about_dsc {
-  width: 540px;
-  height: 112px;
+/* .about_dsc {
   margin: 0 auto;
-  text-align: center;
-}
+} */
 
 /* item section */
 
 .main_part_item {
   background: #81A36B;
   margin-bottom: 120px;
+  padding: 78px 165px;
 }
 
 .item_list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 90px;
-  padding: 78px 165px;
+  
 }
 
 /* how working section */
 
 .main_part_working {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 30px;
   margin-bottom: 120px;
 }
 
 .main-part_working_one {
-  object-fit: cover;
-  margin: 0;
+  height: 560px;
+  flex: 1 1 540px;
 }
 
 .main-part_working_two {
-  max-width: 571px;
+  flex: 1 1 540px;
 }
 
 .sub_sub_title {
   font-family: Architects Daughter;
   font-size: 32px;
   text-align: center;
-  margin: 180px auto 50px;
+  margin: 0 0 50px;
 }
 
 .main_work_dsc {
   max-width: 540px;
-  max-height: 112px;
-  
 }
 
 .main_part_ourworks {
@@ -242,17 +221,19 @@ body {
 }
 
 .card_item {
-  max-width: 350px;
-  max-height: 510px;
   background: #81A36B;
   border-radius: 6px;
   padding: 15px 15px 93px;
   margin-bottom: 23px;
   text-align: center;
+  flex: 1 1 350px;
 }
 
 .our_work {
   border-radius: 6px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* footer */
@@ -263,7 +244,7 @@ body {
 }
 
 .footer_container {
-  padding: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -284,3 +265,12 @@ body {
   gap: 15px;
   text-align: center;
 }
+
+.network_list {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 15px;
+}
+
